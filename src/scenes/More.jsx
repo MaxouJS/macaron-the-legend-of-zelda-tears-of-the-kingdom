@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import TopArrow from "../components/static/layout/TopArrow";
 import Footer from "../components/static/navigation/Footer";
 
-export default function How() {
+export default function More() {
   return (
     <section id="explore" className="snap-start h-screen w-screen text-neutral-900">
       <Canvas
@@ -14,7 +14,7 @@ export default function How() {
           <div className="flex h-screen w-screen items-center justify-center text-center container mx-auto p-8">
             <TopArrow anchor="#explore" />
             <header className="flex flex-col items-center justify-center space-y-8">
-              <h2 className="lg:text-4xl md:text-2xl text-xl scale-150 font-black duration-200">Pre-Order</h2>
+              <h2 className="lg:text-4xl md:text-2xl text-xl scale-150 font-black duration-200">More</h2>
               <h2 className="lg:text-lg md:text-md text-sm font-mono duration-200">Lorem ipsum</h2>
               <a href="#pricing" className="flex items-center bg-gradient-to-br from-indigo-600 to-sky-600 lg:px-16 md:px-12 px-8 lg:py-6 md:py-4 py-3 rounded-full border-b border-white lg:text-4xl md:text-2xl text-neutral-50 text-xl font-black hover:scale-110 duration-200">Start</a>
             </header>

@@ -5,7 +5,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./index.css";
 
-import GeneralSalesConditions from "./pages/GeneralSalesConditions";
 import Home from "./pages/Home";
 import LegalNotice from "./pages/LegalNotice";
 import NotFound from "./pages/NotFound";
@@ -16,10 +15,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-  },
-  {
-    path: "/",
-    element: <GeneralSalesConditions />,
   },
   {
     path: "/",

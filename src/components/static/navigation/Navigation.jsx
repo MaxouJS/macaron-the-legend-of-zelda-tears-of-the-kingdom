@@ -5,7 +5,7 @@ export default function Navigation() {
     <div className="absolute w-full bg-[#E60012] text-white z-10">
       <nav className="flex items-center">
         <div className="flex container mx-auto p-4">
-          <a href="/" className="font-black md:flex hidden items-center hover:scale-110 duration-200">
+          <a href="/" className="font-black md:flex hidden hover:scale-110 duration-200">
             <img src={Logo} className="h-8" />
           </a>
           <div className="ml-auto space-x-8 md:flex hidden items-center text-xs font-medium">

@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="canonical" href="htts://macaron.io" />
         <meta name="description" content="An epic adventure across the land and skies of Hyrule awaits in The Legend of Zelda™: Tears of the Kingdom for the Nintendo Switch system. MADE BY MACARON WEB AGENCY" />
       </Helmet>
-      <main className='h-screen w-screen snap-y snap-mandatory overflow-scroll scroll-smooth select-none'>
+      <main className='h-screen w-screen snap-y snap-mandatory overflow-scroll scroll-smooth select-none font-serif'>
         <Landing />
         <ProofOfConcept />
         <Pricing />
