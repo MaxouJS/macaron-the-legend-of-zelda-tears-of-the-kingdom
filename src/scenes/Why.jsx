@@ -6,13 +6,13 @@ import TopArrow from "../components/static/layout/TopArrow";
 
 export default function Why() {
   return (
-    <section id="landing" className="snap-start h-screen w-screen text-neutral-900">
+    <section id="explore" className="snap-start h-screen w-screen text-neutral-900">
       <Canvas
         shadows
       >
         <Html fullscreen>
           <div className="flex h-screen w-screen items-center justify-center text-center container mx-auto p-8">
-            <TopArrow anchor="#landing" />
+            <TopArrow anchor="#home" />
             <header className="flex flex-col items-center justify-center space-y-8">
               <h2 className="lg:text-6xl md:text-4xl text-2xl scale-150 font-black duration-200">Explore</h2>
               <h3 className="lg:text-lg md:text-md text-sm font-mono duration-200">Lorem ipsum</h3>

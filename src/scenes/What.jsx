@@ -1,6 +1,7 @@
 import { Html, Loader, PerspectiveCamera, PresentationControls, Sky } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
+import Logo from "../../public/images/Logo.png";
 import NintendoSwitch from "../../public/images/NintendoSwitch.svg";
 
 import Model from "../components/dynamic/Model";
@@ -9,7 +10,7 @@ import BottomArrow from "../components/static/layout/BottomArrow";
 
 export default function What() {
   return (
-    <section id="landing" className="snap-start h-screen w-screen text-neutral-900">
+    <section id="home" className="snap-start h-screen w-screen text-neutral-900">
       <Canvas
         shadows
       >
@@ -17,16 +18,19 @@ export default function What() {
           <Navigation isFixed={true} />
           <div className="flex h-screen w-screen items-center justify-center text-center container mx-auto p-8 text-neutral-50">
             <header className="flex flex-col items-center justify-center space-y-8">
-              <h2 className="flex items-center lg:text-lg md:text-md text-sm font-mono duration-200">For <img src={NintendoSwitch} className="h-12" /> Only</h2>
+              <h1><img src={Logo} className="md:h-[33.33vh] h-[25vh] pointer-events-none duration-200" /></h1>
               <div className="flex md:space-x-8 space-x-4 duration-200 lg:text-2xl md:text-xl text-lg font-black ">
                 <a href="#pricing" className="flex items-center bg-gradient-to-br from-teal-600 to-teal-800 lg:px-8 md:px-6 px-4 lg:py-4 md:py-3 py-2 hover:scale-110 duration-200">Explore</a>
                 <a href="#pre-order" className="flex items-center bg-gradient-to-br from-neutral-50 to-neutral-200 text-teal-800 lg:px-8 md:px-6 px-4 lg:py-4 md:py-3 py-2 hover:scale-110 duration-200">Pre-Order</a>
               </div>
             </header>
-            <BottomArrow anchor="#proof-of-concept" />
+            <BottomArrow anchor="#explore" />
           </div>
         </Html>
-        <PresentationControls>
+        <PresentationControls
+          polar={[-0.2, 0.2]}
+          azimuth={[-0.2, 0.2]}
+        >
           <PerspectiveCamera>
             <ambientLight />
             <directionalLight position={[5, 20, 10]} />

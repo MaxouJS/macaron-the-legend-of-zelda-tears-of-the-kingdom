@@ -6,7 +6,7 @@ import Footer from "../components/static/navigation/Footer";
 
 export default function How() {
   return (
-    <section id="explore" className="snap-start h-screen w-screen text-neutral-900">
+    <section id="pre-order" className="snap-start h-screen w-screen text-neutral-900">
       <Canvas
         shadows
       >
