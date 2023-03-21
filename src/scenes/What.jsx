@@ -68,24 +68,43 @@ export default function What() {
           />
           <Model
             name="Box"
-            scale={[10, 10, 10]}
-            position={[-100, -20, -150]}
+            scale={[75, 10, 50]}
+            position={[50, -80, -200]}
           />
           <Model
-            name="Box"
-            scale={[10, 10, 10]}
-            position={[-125, -15, -150]}
-          />
-          <Model
-            name="Cloud"
-            scale={[100, 200, 100]}
-            position={[-400, -100, -400]}
+            name="LeftCloud"
+            scale={[50, 100, 50]}
+            position={[-200, 50, -200]}
             rotation={[0, Math.PI * 2.5, 0]}
           />
           <Model
-            name="Cloud"
-            scale={[100, 200, 100]}
-            position={[200, -50, -200]}
+            name="LeftCloud"
+            scale={[50, 50, 50]}
+            position={[-200, 150, -400]}
+            rotation={[0, Math.PI * 2.5, 0]}
+          />
+          <Model
+            name="LeftCloud"
+            scale={[200, 200, 200]}
+            position={[-400, -200, -400]}
+            rotation={[0, Math.PI * 2.5, 0]}
+          />
+          <Model
+            name="RightCloud"
+            scale={[50, 100, 50]}
+            position={[200, 0, -200]}
+            rotation={[0, -Math.PI * 2.5, 0]}
+          />
+          <Model
+            name="RightCloud"
+            scale={[50, 50, 50]}
+            position={[200, 100, -400]}
+            rotation={[0, -Math.PI * 2.5, 0]}
+          />
+          <Model
+            name="RightCloud"
+            scale={[200, 200, 200]}
+            position={[400, -400, -400]}
             rotation={[0, -Math.PI * 2.5, 0]}
           />
         </PerspectiveCamera>
@@ -103,7 +122,6 @@ export default function What() {
               <a href="#pre-order" className="text-center bg-gradient-to-b from-[red]/90 to-[red]/75 text-neutral-50 backdrop-blur-md border border-neutral-50/75 shadow-xl shadow-white/25 lg:w-48 md:w-40 w-32 lg:py-4 md:py-3 py-2 hover:scale-110 hover:animate-pulse ease-out duration-200">Pre-Order</a>
             </div>
           </header>
-          <BottomArrow anchor="#explore" />
         </div>
       </div>
     </section>

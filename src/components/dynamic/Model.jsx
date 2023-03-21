@@ -26,4 +26,5 @@ export default function Model(props) {
 };
 
 useGLTF.preload('/models/Box.glb');
-useGLTF.preload('/models/Cloud.glb');
+useGLTF.preload('/models/LeftCloud.glb');
+useGLTF.preload('/models/RightCloud.glb');
