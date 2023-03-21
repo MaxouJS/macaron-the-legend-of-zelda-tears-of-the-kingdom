@@ -94,11 +94,11 @@ export default function What() {
       <div className="-mt-[100vh]">
         <Navigation />
         <div className="flex h-screen w-screen items-center justify-center text-center container mx-auto p-8 text-neutral-50">
-          <header className="flex flex-col items-center justify-center space-y-8">
+          <header className="flex flex-col items-center justify-center space-y-8 md:-mt-32 -mt-24">
             <h1 className="backdrop-blur-none pointer-events-none">
               <img src={Logo} className="md:h-[50vh] h-[25vh] duration-200" />
             </h1>
-            <div className="flex md:space-x-8 space-x-4 duration-200 lg:text-2xl md:text-xl text-lg font-black ">
+            <div className="flex md:space-x-8 space-x-4 lg:text-2xl md:text-xl text-lg font-black duration-200">
               <a href="#explore" className="text-center bg-gradient-to-br from-emerald-400/75 to-teal-800/75 text-neutral-50 backdrop-blur-md border border-neutral-50/75 shadow-xl shadow-white/25 lg:w-48 md:w-40 w-32 lg:py-4 md:py-3 py-2 hover:scale-110 hover:animate-pulse ease-out duration-200">Explore</a>
               <a href="#pre-order" className="text-center bg-gradient-to-b from-[red]/90 to-[red]/75 text-neutral-50 backdrop-blur-md border border-neutral-50/75 shadow-xl shadow-white/25 lg:w-48 md:w-40 w-32 lg:py-4 md:py-3 py-2 hover:scale-110 hover:animate-pulse ease-out duration-200">Pre-Order</a>
             </div>
