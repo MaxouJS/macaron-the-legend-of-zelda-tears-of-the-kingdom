@@ -99,8 +99,8 @@ export default function What() {
               <img src={Logo} className="md:h-[50vh] h-[25vh] duration-200" />
             </h1>
             <div className="flex md:space-x-8 space-x-4 duration-200 lg:text-2xl md:text-xl text-lg font-black ">
-              <a href="#explore" className="flex items-center bg-gradient-to-br from-teal-600/75 to-teal-800/75 backdrop-blur-md shadow-xl shadow-white/10 ring-2 ring-teal-600/75 ring-offset-neutral-50/100 ring-offset-2 lg:px-8 md:px-6 px-4 lg:py-4 md:py-3 py-2 hover:scale-110 hover:animate-pulse hover:ring-offset-teal-200/100 hover:text-teal-200 ease-out duration-200">Explore</a>
-              <a href="#pre-order" className="flex items-center bg-gradient-to-br from-neutral-50/75 to-neutral-200/75 text-teal-800 backdrop-blur-md shadow-xl shadow-white/10 ring-2 ring-neutral-50/75 ring-offset-teal-800/75 ring-offset-2 lg:px-8 md:px-6 px-4 lg:py-4 md:py-3 py-2 hover:scale-110 hover:animate-pulse hover:ring-offset-teal-400/100 hover:text-teal-400 ease-out duration-200">Pre-Order</a>
+              <a href="#explore" className="text-center bg-gradient-to-br from-emerald-400/75 to-teal-800/75 text-neutral-50 backdrop-blur-md border border-neutral-50/75 shadow-xl shadow-white/25 lg:w-48 md:w-40 w-32 lg:py-4 md:py-3 py-2 hover:scale-110 hover:animate-pulse ease-out duration-200">Explore</a>
+              <a href="#pre-order" className="text-center bg-gradient-to-b from-[red]/90 to-[red]/75 text-neutral-50 backdrop-blur-md border border-neutral-50/75 shadow-xl shadow-white/25 lg:w-48 md:w-40 w-32 lg:py-4 md:py-3 py-2 hover:scale-110 hover:animate-pulse ease-out duration-200">Pre-Order</a>
             </div>
           </header>
           <BottomArrow anchor="#explore" />
