@@ -6,9 +6,9 @@ import { Bloom, DepthOfField, EffectComposer, HueSaturation, Noise, Vignette } f
 
 import Logo from "/images/Logo.png";
 
+import Animation from "../components/dynamic/Animation";
 import Model from "../components/dynamic/Model";
 import Navigation from "../components/static/navigation/Navigation";
-import BottomArrow from "../components/static/layout/BottomArrow";
 
 {/* Creates a 3D Rig that shake the camera automatically and the camera smoothly follows the mouse */}
 function Rig() {
@@ -56,10 +56,16 @@ export default function What() {
           <ambientLight intensity={0.75} />
           <pointLight position={[5, 20, 10]} intensity={0.75} />
           {/* 3D Models */}
+          <Animation
+            name="MaleDummyIdle"
+            scale={[1, 1, 1]}
+            position={[3, -1, -0.5]}
+            rotation={[0, Math.PI * 1.5, 0]}
+          />
           <Model
             name="Box"
-            scale={[20, 2, 10]}
-            position={[15, -4, -10]}
+            scale={[8, 1, 4]}
+            position={[6, -2, -0.5]}
           />
           <Model
             name="Box"

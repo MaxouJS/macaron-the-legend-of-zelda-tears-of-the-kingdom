@@ -58,7 +58,8 @@ export default function Why() {
           <Animation
             name="MaleDummyIdle"
             scale={[1, 1, 1]}
-            position={[0.5, 0, -1.5]}
+            position={[0.5, 0, -0.5]}
+            rotation={[0, Math.PI * 1.5, 0]}
           />
           <Model
             name="Box"
