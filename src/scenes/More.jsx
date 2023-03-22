@@ -7,9 +7,7 @@ import Footer from "../components/static/navigation/Footer";
 export default function More() {
   return (
     <section id="explore" className="snap-start h-screen w-screen text-neutral-900">
-      <Canvas
-        shadows
-      >
+      <Canvas>
         <Html fullscreen>
           <div className="flex h-screen w-screen items-center justify-center text-center container mx-auto p-8">
             <TopArrow anchor="#explore" />

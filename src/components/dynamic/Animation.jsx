@@ -11,7 +11,7 @@ export default function Animation(props) {
    
   useEffect(() => {
     scene.traverse((child) => {
-      child.frustumCulled = true;
+      child.frustumCulled = false;
     });
     
     actions.ArmatureAction.play();

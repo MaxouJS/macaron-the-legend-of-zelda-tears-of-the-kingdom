@@ -15,7 +15,7 @@ function Rig() {
   const [vector3] = useState(() => new Vector3());
 
   useFrame(({state, camera, mouse}) => {
-    camera.position.lerp(vector3.set(mouse.x * 1, mouse.y * 1, 5), 1);
+    camera.position.lerp(vector3.set(mouse.x * 2, mouse.y * 2, 5), 0.1);
   });
 
   return (

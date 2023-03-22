@@ -1,7 +1,6 @@
 import { Html, Loader, PerspectiveCamera, Sky } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
-import TopArrow from "../components/static/layout/TopArrow";
 import Footer from "../components/static/navigation/Footer";
 
 export default function How() {
@@ -12,7 +11,6 @@ export default function How() {
       >
         <Html fullscreen>
           <div className="flex h-screen w-screen items-center justify-center text-center container mx-auto p-8">
-            <TopArrow anchor="#explore" />
             <header className="flex flex-col items-center justify-center space-y-8">
               <h2 className="lg:text-4xl md:text-2xl text-xl scale-150 font-black duration-200">Pre-Order</h2>
               <h2 className="lg:text-lg md:text-md text-sm font-mono duration-200">Lorem ipsum</h2>

@@ -4,19 +4,15 @@ import { CameraShake, Loader, PerspectiveCamera, Sky } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Bloom, DepthOfField, EffectComposer, HueSaturation, Noise, Vignette } from "@react-three/postprocessing";
 
-import Logo from "/images/Logo.png";
-
+import Animation from "../components/dynamic/Animation";
 import Model from "../components/dynamic/Model";
-import Navigation from "../components/static/navigation/Navigation";
-import BottomArrow from "../components/static/layout/BottomArrow";
-import TopArrow from "../components/static/layout/TopArrow";
 
 {/* Creates a 3D Rig that shake the camera automatically and the camera smoothly follows the mouse */}
 function Rig() {
   const [vector3] = useState(() => new Vector3());
 
   useFrame(({state, camera, mouse}) => {
-    camera.position.lerp(vector3.set(mouse.x * 1, mouse.y * 1, 5), 1);
+    camera.position.lerp(vector3.set(mouse.x * 0.1, mouse.y * 0.1, 0), 0.1);
   });
 
   return (
@@ -34,7 +30,7 @@ function Rig() {
 
 export default function Why() {
   return (
-    <section id="home" className="snap-start h-screen w-screen text-neutral-900">
+    <section id="explore" className="snap-start h-screen w-screen text-neutral-900">
       {/* 3D Canvas */}
       <Canvas
         className="bg-gradient-to-b from-sky-50 via-teal-400 to-blue-800"
@@ -53,31 +49,21 @@ export default function Why() {
         {/* Camera and camera effects */}
         <Rig />
         <PerspectiveCamera
-          position={[0, -5, -50]}
+          position={[0, -1.75, 0]}
         >
           {/* Lights */}
           <ambientLight intensity={0.75} />
           <pointLight position={[5, 20, 10]} intensity={0.75} />
           {/* 3D Models */}
-          <Model
-            name="Box"
-            scale={[10, 10, 10]}
-            position={[-50, -40, -60]}
-          />
-          <Model
-            name="Box"
-            scale={[10, 10, 10]}
-            position={[0, -40, -35]}
-          />
-          <Model
-            name="Box"
-            scale={[10, 10, 10]}
-            position={[25, -40, -25]}
+          <Animation
+            name="MaleDummyIdle"
+            scale={[1, 1, 1]}
+            position={[0.5, 0, -1.5]}
           />
           <Model
             name="Box"
             scale={[600, 1, 200]}
-            position={[0, -40, 0]}
+            position={[0, -1, 0]}
           />
           <Model
             name="LeftCloud"
