@@ -15,7 +15,7 @@ function Rig() {
   const [vector3] = useState(() => new Vector3());
 
   useFrame(({state, camera, mouse}) => {
-    camera.position.lerp(vector3.set(mouse.x * 2, mouse.y * 2, 5), 0.1);
+    camera.position.lerp(vector3.set(mouse.x * 0.5, mouse.y * 0.5, 5), 0.1);
   });
 
   return (
@@ -36,7 +36,7 @@ export default function What() {
     <section id="home" className="snap-start h-screen w-screen text-neutral-900">
       {/* 3D Canvas */}
       <Canvas
-        className="bg-gradient-to-b from-blue-800 via-teal-400 to-sky-50"
+        className="bg-gradient-to-b from-blue-800 via-teal-400 to-neutral-50"
       >
         {/* Postprocessing effects */}
         {/*
@@ -124,8 +124,8 @@ export default function What() {
               <img src={Logo} className="md:h-[50vh] h-[25vh] duration-200" />
             </h1>
             <div className="flex md:space-x-8 space-x-4 lg:text-2xl md:text-xl text-lg font-black duration-200">
-              <a href="#explore" className="text-center bg-gradient-to-br from-emerald-400/75 to-teal-800/75 text-neutral-50 backdrop-blur-md border border-neutral-50/75 shadow-xl shadow-white/25 lg:w-48 md:w-40 w-32 lg:py-4 md:py-3 py-2 hover:scale-110 hover:animate-pulse ease-out duration-200">Explore</a>
-              <a href="#pre-order" className="text-center bg-gradient-to-b from-[red]/90 to-[red]/75 text-neutral-50 backdrop-blur-md border border-neutral-50/75 shadow-xl shadow-white/25 lg:w-48 md:w-40 w-32 lg:py-4 md:py-3 py-2 hover:scale-110 hover:animate-pulse ease-out duration-200">Pre-Order</a>
+              <a href="#explore" className="text-center bg-gradient-to-br from-emerald-400/75 to-teal-800/75 text-neutral-50 backdrop-blur-md border border-neutral-50/75 shadow-xl shadow-teal-800/25 lg:w-48 md:w-40 w-32 lg:py-4 md:py-3 py-2 hover:scale-110 hover:animate-pulse ease-out duration-200">Explore</a>
+              <a href="#pre-order" className="text-center bg-gradient-to-b from-[red]/90 to-[red]/75 text-neutral-50 backdrop-blur-md border border-neutral-50/75 shadow-xl shadow-[red]/25 lg:w-48 md:w-40 w-32 lg:py-4 md:py-3 py-2 hover:scale-110 hover:animate-pulse ease-out duration-200">Pre-Order</a>
             </div>
           </header>
         </div>
