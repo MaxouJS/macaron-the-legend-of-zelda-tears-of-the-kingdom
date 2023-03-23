@@ -36,7 +36,7 @@ export default function Why() {
     <section id="explore" className="snap-start h-screen w-screen text-neutral-900">
       {/* 3D Canvas */}
       <Canvas
-        className="bg-gradient-to-b from-neutral-50 to-neutral-200"
+        className="bg-gradient-to-b from-neutral-50 to-neutral-50"
       >
         {/* 2D UI */}
         {/* Camera and camera effects */}
